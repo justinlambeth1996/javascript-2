@@ -147,7 +147,7 @@ $(document).ready(function() {
 
           if (attacker.health <= 0) {
             clearMessage();
-            restartGame("You have been defeated...GAME OVER!!!");
+            restartGame("GAME OVER");
             $("#attack-button").off("click");
           }
         }
@@ -155,7 +155,7 @@ $(document).ready(function() {
 
           $("#defender").empty();
   
-          var gameStateMessage = "You have defeated " + defender.name + ", you can choose to fight another enemy.";
+          var gameStateMessage = "You have defeated " + defender.name + ", choose to fight another enemy.";
           renderMessage(gameStateMessage);
 
           killCount++;
